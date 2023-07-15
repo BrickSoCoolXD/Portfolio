@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben_G</title>
+
+    <!-- Bootstrap 5 CSSStyle add -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- End point add bootstrap's CSSStyle  add -->
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <style id="gatsby-inlined-css">
+      .pricing-table-subtitle {
+              margin-top: 68px;
+              font-weight: normal;
+            }
+
+            .pricing-table-title {
+              font-weight: bold;
+              margin-bottom: 68px;
+            }
+
+            .pricing-card {
+              border: none;
+              border-radius: 10px;
+              margin-bottom: 40px;
+              text-align: center;
+              transition: all 0.6s;
+            }
+
+            .pricing-card:hover {
+              box-shadow: 0 2px 40px 0 rgba(205, 205, 205, 0.55);
+              transform: translateY(-10px);
+            }
+
+            .pricing-card.pricing-card-highlighted {
+              box-shadow: 0 2px 40px 0 rgba(205, 205, 205, 0.55);
+            }
+
+            .pricing-card .card-body {
+              padding-top: 55px;
+              padding-bottom: 62px;
+            }
+
+            .pricing-plan-title {
+              font-size: 20px;
+              color: #000;
+              margin-bottom: 11px;
+              font-weight: normal;
+            }
+
+            .pricing-plan-cost {
+              font-size: 30px;
+              color: #000;
+              font-weight: bold;
+              margin-bottom: 10px;
+            }
+
+            .pricing-plan-icon {
+              display: inline-block;
+              width: 30px;
+              height: 30px;
+              font-size: 30px;
+              line-height: 1;
+              margin-bottom: 15px;
+            }
+
+            .pricing-plan-features {
+              list-style: none;
+              padding-left: 0;
+              font-size: 14px;
+              line-height: 1.8;
+              margin-bottom: 25px;
+              color: #303132;
+            }
+
+            .pricing-plan-purchase-btn {
+              color: #000;
+              font-size: 16px;
+              font-weight: bold;
+              width: 120px;
+              height: 35px;
+              border-radius: 17.5px;
+              transition: all 0.4s;
+              position: relative;
+              display: flex;
+              align-items: center;
+              margin-left: auto;
+              margin-right: auto;
+              justify-content: center;
+            }
+
+            .content {
+              height: 70vh; }
+
+            .footer-16371 {
+              padding: 7rem 0;
+              font-family: "Poppins", sans-serif; }
+              .footer-16371 .footer-site-logo {
+                text-align: center;
+                font-size: 2rem;
+                font-weight: 900; }
+                .footer-16371 .footer-site-logo a {
+                  color: #4200ff; }
+              .footer-16371 .nav-links {
+                padding: 0;
+                margin: 0; }
+                .footer-16371 .nav-links li {
+                  display: inline-block; }
+                  .footer-16371 .nav-links li a {
+                    padding: 10px;
+                    color: #000; }
+                    .footer-16371 .nav-links li a:hover {
+                      color: #4200ff; }
+              .footer-16371 .social h3 {
+                font-weight: bold;
+                font-size: 18px;
+                color: #000; }
+              .footer-16371 .social ul li {
+                display: inline-block; }
+                .footer-16371 .social ul li a {
+                  display: inline-block;
+                  padding: 10px; }
+                .footer-16371 .social ul li.in a {
+                  color: #df588a; }
+                .footer-16371 .social ul li.tw a {
+                  color: #15b8ff; }
+                .footer-16371 .social ul li.fb a {
+                  color: #3742d0; }
+                .footer-16371 .social ul li.dr a {
+                  color: #fa38c1; }
+                .footer-16371 .social ul li.pin a {
+                  color: #dd4d5a; }
+              .footer-16371 .copyright {
+                color: #999999; }
+
+
+
+                  .hero-container {
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      justify-content: center;
+                      height: 60vh;
+                      text-align: center;
+            }
+
+
+            .hero-container a {
+                font-weight: 700
+            }
+
+            @media (max-width: 767px) {
+                .hero-container {
+                    margin-top:15vh
+                }
+            }
+
+            .hero-container .hero-title {
+                font-family: Monaco,Consolas,Lucida Console,monospace;
+                font-size: 4.5em;
+                color: #747fe0
+            }
+
+            .hero-container .hero-title:before {
+                content: ">\A0"
+            }
+
+            @media (max-width: 767px) {
+                .hero-container .hero-title {
+                    font-size:2.3em
+                }
+            }
+
+            .hero-container .hero-title span {
+                background-color: rgba(116,127,224,.65);
+                animation: caret 1s steps(1) infinite
+            }
+
+            .hero-container .hero-description {
+                font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+                font-weight: 200;
+                font-size: 1.3em;
+                line-height: 40px;
+                color: #525f7f;
+                margin: 80px 0
+            }
+
+            @media (max-width: 767px) {
+                .hero-container .hero-description {
+                    font-size:1.2em;
+                    line-height: 30px;
+                    max-width: 100%;
+                    margin: 50px 0
+                }
+            }
+
+
+      .about-container {
+          margin-top: 20vh;
+          margin: 0 auto
+      }
+
+      .about-container .terminal .terminal-header {
+          height: 28px;
+          background-color: #e4e3e5;
+          border-radius: 10px 10px 0 0;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center
+      }
+
+      .about-container .terminal .terminal-header .header-button {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          margin-left: 9px
+      }
+
+      .about-container .terminal .terminal-header .red {
+          background-color: #f96256;
+          border: 1px solid #f65549
+      }
+
+      .about-container .terminal .terminal-header .yellow {
+          background-color: #fdbc3d;
+          border: 1px solid #ffb524
+      }
+
+      .about-container .terminal .terminal-header .green {
+          background-color: #33c948;
+          border: 1px solid #2dbb41
+      }
+
+      .about-container .terminal .terminal-window {
+          background-color: #5a5d7a;
+          border-radius: 0 0 4px 4px;
+          box-shadow: 0 50px 100px rgba(50,50,93,.15),0 15px 35px rgba(50,50,93,.2),0 5px 15px rgba(0,0,0,.12);
+          font-family: Monaco,Consolas,Lucida Console,monospace
+      }
+
+      .about-container .terminal .terminal-window a {
+          color: #35feff
+      }
+
+      .about-container .terminal .terminal-window .statement:first-child {
+          padding-top: 35px
+      }
+
+      .about-container .terminal .terminal-window .statement:last-child {
+          padding-bottom: 60px
+      }
+
+      .about-container .terminal .terminal-window .statement {
+          margin-bottom: 25px;
+          margin-left: 35px;
+          margin-right: 35px;
+          line-height: 24px
+      }
+
+      .about-container .terminal .terminal-window .statement .input-statement {
+          color: #f7f7f7
+      }
+
+      .about-container .terminal .terminal-window .statement .input-statement:before {
+          content: ">\A0"
+      }
+
+      .about-container .terminal .terminal-window .statement .return-statement {
+          color: #e7d184
+      }
+
+      .about-container .terminal .terminal-window .statement span {
+          background: hsla(0,0%,97%,.65);
+          animation: caret 1s steps(1) infinite
+      }
+
+      @keyframes caret {
+          50% {
+              background-color: transparent
+          }
+      }
+  </style>
+</head>
+<body>
+        <!---Nav-Bar--->
+            <section id="navbar">
+                  <header class="py-3 mb-4 border-bottom">
+                    <div class="container d-flex flex-wrap justify-content-center">
+                      <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bounding-box" viewBox="0 0 16 16">
+                            <path d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1v2h2v6h-2v2H5v-2H3V5h2V3h6zm1-2h3v3h-3V1zm3 11v3h-3v-3h3zM4 15H1v-3h3v3zM1 4V1h3v3H1z"/>
+                          </svg>
+                        <span class="fs-4 "> -Ben_G-</span>
+                      </a>
+                      <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+                        <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                      </form>
+                    </div>
+                  </header>
+            </section>
+
+            <div class="hero-container" data-reactid="9">
+              <div class="hero-title" data-reactid="10"><!-- react-text: 11 -->Ben_G<!-- /react-text -->
+                <span data-reactid="12">&nbsp;</span></div><div class="hero-description" data-reactid="13">I am a Software Engineering Student, 2nd Year at Mae Fah Luang .<!-- /react-text --><br data-reactid="15"><!-- react-text: 16 -->Check out my<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text -->
+                  <a href="#projects" data-reactid="18">side-projects</a> below.</div></div>
+        <!-- End point Nav-Bar -->
+
+        <!-- About me -->
+        <section id="aboutme">
+          <div class="overflow-hidden" style="max-height: 300vh;">
+            <div class="container px-md-5">
+              <div class="about-container">
+                <div class="terminal">
+                  <div class="terminal-header">
+                    <div class="header-button red"></div>
+                    <div class="header-button yellow"></div>
+                    <div class="header-button green"></div>
+                  </div>
+                  <div class="terminal-window">
+                    <div>
+                      <div class="statement">
+                        <div class="input-statement">Ben_G.currentLocation</div>
+                        <div class="return-statement">"Chiang Rai, TH"</div>
+                      </div>
+                      <div class="statement">
+                        <div class="input-statement">Justin.contactInfo</div>
+                        <div class="return-statement">[
+                          "<a href='mailto:nimittanbooutor@gmail.com'>nimittanbooutor@gmail.com</a>",
+                          "<a rel='noopener' href='www.linkedin.com/in/nimit-tanbooutor-798139246'>LinkedIn</a>",
+                          "<a rel='noopener' href='https://github.com/BrickSoCoolXD'>github</a>"]
+                        </div>
+                      </div>
+                      <div class="statement">
+                        <div class="input-statement">Ben_G.resume</div>
+                        <div class="return-statement">"<a rel='noopener' href='/justinchi_resume.pdf' target='_blank'>Ben_G.pdf</a>"</div>
+                      </div>
+                      <div class="statement">
+                        <div class="input-statement">Ben_G.interests</div>
+                        <div class="return-statement">["Manga", "Calisthenics", "Cat", "Music"]</div>
+                      </div>
+                      <div class="statement">
+                        <div class="input-statement">Ben_G.education</div>
+                        <div class="return-statement">"B.Sc. Software Engineer - Mae Fah Luang University"</div>
+                      </div>
+                      <div class="statement">
+                        <div class="input-statement">Ben_G.skills</div>
+                        <div class="return-statement">["Sass", "Java", "JavaScript", "React", "Redux", "C#", "Flask", "webpack", "git"]</div>
+                      </div>
+                      <div class="statement">
+                        <div class="input-statement"><span>&nbsp;</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- End point About me -->
+
+        <!-- Educations -->
+            <section id="Educations">
+                <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 mb-0 align-items-center justify-content-center">
+                    <div class="list-group">
+                    <h4 class="display-5 fw-medium text-body-emphasis"mb-5>Educations</h4><br>
+                      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-align-center" viewBox="0 0 16 16">
+                          <path d="M8 1a.5.5 0 0 1 .5.5V6h-1V1.5A.5.5 0 0 1 8 1zm0 14a.5.5 0 0 1-.5-.5V10h1v4.5a.5.5 0 0 1-.5.5zM2 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7z"/>
+                        </svg>
+                        <div class="d-flex gap-2 w-100 justify-content-between">
+                          <div>
+                            <h6 class="mb-0">University</h6>
+                            <p class="mb-0 opacity-75">Software Engineering</p>
+                            <p href="#"><strong>Mae Fah Luang University</strong></p>
+                          </div>
+                          <small class="opacity-50 text-nowrap">Now</small>
+                          <small class="opacity-50 text-nowrap">2022</small>
+                        </div>
+                      </a>
+                      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-align-center" viewBox="0 0 16 16">
+                          <path d="M8 1a.5.5 0 0 1 .5.5V6h-1V1.5A.5.5 0 0 1 8 1zm0 14a.5.5 0 0 1-.5-.5V10h1v4.5a.5.5 0 0 1-.5.5zM2 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7z"/>
+                        </svg>
+                        <div class="d-flex gap-2 w-100 justify-content-between">
+                          <div>
+                            <h6 class="mb-0">High-School</h6>
+                            <p class="mb-0 opacity-75">Math-Science-Computer</p>
+                            <p href="#"><strong>Damrongratsongkroh School</strong></p>
+                            <p></p>
+                          </div>
+                          <small class="opacity-50 text-nowrap">2019</small>
+                        </div>
+                      </a>
+                      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-align-center" viewBox="0 0 16 16">
+                          <path d="M8 1a.5.5 0 0 1 .5.5V6h-1V1.5A.5.5 0 0 1 8 1zm0 14a.5.5 0 0 1-.5-.5V10h1v4.5a.5.5 0 0 1-.5.5zM2 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7z"/>
+                        </svg>
+                        <div class="d-flex gap-2 w-100 justify-content-between">
+                          <div>
+                            <h6 class="mb-0">Junior High School</h6>
+                            <p class="mb-0 opacity-75">Default / Standart</p>
+                            <p href="#"><strong>ChaingraiVidtayahkhom School</strong></p>
+                          </div>
+                          <small class="opacity-50 text-nowrap">2016</small>
+                        </div>
+                      </a>
+                    </div>
+                  </div><hr class="mb-5">
+            </section>
+        <!-- End point Educations -->
+
+        <!-- Skills -->
+        <section id="skills">
+          <div class="container">
+            <h5 class="text-center pricing-table-subtitle">Dev / Engineer</h5>
+            <h1 class="text-center pricing-table-title">Skills Table</h1>
+            <div class="row justify-content-center">
+              <div class="col-md-4">
+                <div class="card pricing-card pricing-plan-basic">
+                  <div class="card-body">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                      <path d="M21 12c0-5.523-4.477-10-10-10S1 6.477 1 12s4.477 10 10 10 10-4.477 10-10zm-10-9c4.963 0 9 4.037 9 9s-4.037 9-9 9-9-4.037-9-9 4.037-9 9-9zm1 3H8v6h2V9h2V7zm4 5h-2v2h2v-2zm0-4h-2v2h2V9zm0 4h-2v2h2v-2z"/>
+                    </svg>
+                    <p class="pricing-plan-title">Dev</p>
+                    <h3 class="pricing-plan-cost ml-auto">Developer</h3>
+                    <ul class="pricing-plan-features">
+                      <li>Java</li>
+                      <li>C#</li>
+                      <li>JavaScript</li>
+                      <li>HTML & CSS</li>
+                      <li>Node.js</li>
+                    </ul>
+                    <a href="#!" class="btn pricing-plan-purchase-btn">Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card pricing-card pricing-card-highlighted pricing-plan-pro">
+                  <div class="card-body">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                      <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm.535-10.227l1.75 1.74V7h-1.741zM10.938 14h2.124l1.326-5h-2.091zM10 9h4v1h-2.2l-.8 3H12l-.8-3H10V9zm7.538 3H17v2h-2v-2h-.462l-.825 3H15l-.762-3z"/>
+                    </svg>
+                    <p class="pricing-plan-title">Languages</p>
+                    <h1 class="pricing-plan-cost ml-auto">Communication</h1>
+                    <ul class="pricing-plan-features">
+                      <li>Thai [native]</li>
+                      <li>English</li>
+                      <li>Kum-Muang</li>
+                    </ul>
+                    <a href="#!" class="btn pricing-plan-purchase-btn">Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card pricing-card pricing-plan-enterprise">
+                  <div class="card-body">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                      <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm-.994-8h-2V7h1.744zM11 8h2v2h-2V8zm0 4h2v2h-2v-2zm-4.602-4H5.998v2H8v-2zm0 4H6v2h2v-2zm0 4H6v2h2v-2zm5.602-8h2v2h-2V8zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm3.402-15H17v2h2.002L20 4.328z"/>
+                    </svg>
+                    <p class="pricing-plan-title">Otherwise</p>
+                    <h3 class="pricing-plan-cost ml-auto">etc.</h3>
+                    <ul class="pricing-plan-features">
+                      <li>UX / UI Design</li>
+                      <li>Cloud Computing</li>
+                      <li>Data Science</li>
+                      <li>DevOps</li>
+                    </ul>
+                    <a href="#!" class="btn pricing-plan-purchase-btn">Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <i class="fa fa-drivers-license mb-5" aria-hidden="true"></i>
+          </div>
+        </section><br><hr><br><br>
+        
+        
+        
+        <!-- End point Skills -->
+
+        <!-- Footer -->
+        <section id="footer">
+          <footer class="footer-16371">
+            <div class="container">
+            <div class="row justify-content-center">
+            <div class="col-md-9 text-center">
+            <div class="footer-site-logo mb-4">
+            <a href="#">-Ben_G-</a>
+            </div>
+            <ul class="list-unstyled nav-links mb-5">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="social mb-4">
+            <h3>Stay in touch</h3>
+            <ul class="list-unstyled">
+            <li class="in"><a href="#"><span class="icon-instagram"></span></a></li>
+            <li class="fb"><a href="#"><span class="icon-facebook"></span></a></li>
+            <li class="tw"><a href="#"><span class="icon-twitter"></span></a></li>
+            <li class="pin"><a href="#"><span class="icon-pinterest"></span></a></li>
+            <li class="dr"><a href="#"><span class="icon-dribbble"></span></a></li>
+            </ul>
+            </div>
+            <div class="copyright">
+            <p class="mb-0"><small>© Ben_G. All Rights Reserved.</small></p>
+            </div>
+            </div>
+            </div>
+            </div>
+            </footer>
+        </section>
+        <!--  End point Footer-->
+
+    <!--- Bootstrap 5 Script add --->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- End point add bootstrap's Script add -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script id="webpack-manifest">
+      /*<![CDATA[*/
+      window.webpackManifest = {
+          "231608221292675": "app-db661571d84de5cac0fc.js",
+          "162898551421021": "component---src-pages-404-js-f6662393a31fb18d5e07.js",
+          "35783957827783": "component---src-pages-index-js-4fe2f8619e260209300d.js",
+          "60335399758886": "path----fe26d3dac1a5a7b11662.js",
+          "254022195166212": "path---404-a0e39f21c11f6a62c5ab.js",
+          "142629428675168": "path---index-a0e39f21c11f6a62c5ab.js",
+          "178698757827068": "path---404-html-a0e39f21c11f6a62c5ab.js",
+          "114276838955818": "component---src-layouts-index-js-f714a1f6c30be7518b89.js"
+      }
+  </script>
+</body>
+</html>
