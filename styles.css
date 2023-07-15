@@ -1,0 +1,123 @@
+.pricing-table-subtitle {
+  margin-top: 68px;
+  font-weight: normal;
+}
+
+.pricing-table-title {
+  font-weight: bold;
+  margin-bottom: 68px;
+}
+
+.pricing-card {
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+  transition: all 0.6s;
+}
+
+.pricing-card:hover {
+  box-shadow: 0 2px 40px 0 rgba(205, 205, 205, 0.55);
+  transform: translateY(-10px);
+}
+
+.pricing-card.pricing-card-highlighted {
+  box-shadow: 0 2px 40px 0 rgba(205, 205, 205, 0.55);
+}
+
+.pricing-card .card-body {
+  padding-top: 55px;
+  padding-bottom: 62px;
+}
+
+.pricing-plan-title {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 11px;
+  font-weight: normal;
+}
+
+.pricing-plan-cost {
+  font-size: 30px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pricing-plan-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.pricing-plan-features {
+  list-style: none;
+  padding-left: 0;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  color: #303132;
+}
+
+.pricing-plan-purchase-btn {
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  width: 120px;
+  height: 35px;
+  border-radius: 17.5px;
+  transition: all 0.4s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.content {
+  height: 70vh; }
+
+.footer-16371 {
+  padding: 7rem 0;
+  font-family: "Poppins", sans-serif; }
+  .footer-16371 .footer-site-logo {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900; }
+    .footer-16371 .footer-site-logo a {
+      color: #4200ff; }
+  .footer-16371 .nav-links {
+    padding: 0;
+    margin: 0; }
+    .footer-16371 .nav-links li {
+      display: inline-block; }
+      .footer-16371 .nav-links li a {
+        padding: 10px;
+        color: #000; }
+        .footer-16371 .nav-links li a:hover {
+          color: #4200ff; }
+  .footer-16371 .social h3 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000; }
+  .footer-16371 .social ul li {
+    display: inline-block; }
+    .footer-16371 .social ul li a {
+      display: inline-block;
+      padding: 10px; }
+    .footer-16371 .social ul li.in a {
+      color: #df588a; }
+    .footer-16371 .social ul li.tw a {
+      color: #15b8ff; }
+    .footer-16371 .social ul li.fb a {
+      color: #3742d0; }
+    .footer-16371 .social ul li.dr a {
+      color: #fa38c1; }
+    .footer-16371 .social ul li.pin a {
+      color: #dd4d5a; }
+  .footer-16371 .copyright {
+    color: #999999; }
